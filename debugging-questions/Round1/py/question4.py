@@ -8,9 +8,9 @@ def count_rsvp(invited, rsvp):
     for person in rsvp:
         for invited_person in invited:
             if person == invited_person:
-                rsvp_count += 1 
+                rsvp_count += 1  
     return rsvp_count
-
 invited = ["Alice", "Bob", "Charlie", "Daisy", "Eve"]
 rsvp = ["Charlie", "Bob", "Alice", "Eve", "Eve"]
 print(f"Total confirmed RSVP: {count_rsvp(invited, rsvp)}")
+

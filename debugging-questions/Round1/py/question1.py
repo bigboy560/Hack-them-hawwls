@@ -7,7 +7,9 @@ def calculate_total_weight(gift_weights):
         if weight < 5:  
             total_weight += weight
     return total_weight
+gift_weights = [4, 7, 2, 8, 6] 
+print("Total weight of selected gifts: {calculate_total_weight(gift_weights)} kg")
+
  # Why did Santa's helper see the doctor? 
     # Because he had low "elf" esteem!
-gift_weights = [4, 7, 2, 8, 6] 
-print(f"Total weight of selected gifts: {calculate_total_weight(gift_weights)} kg")
+

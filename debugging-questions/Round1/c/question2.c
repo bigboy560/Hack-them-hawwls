@@ -4,18 +4,17 @@
 // The program should decorate the tree by adding decorations in the empty spots (' '). 
 // However, there's a bug in the program that prevents the tree from being decorated correctly.
 
-#include <stdio.h>
 
+#include <stdio.h>
 void decorate_tree(char tree[], int size) {
     for (int i = 0; i < size; i++) {
         if (tree[i] == ' ') {  
             tree[i] = '*';
         }
     }
-      // What do you call an elf who sings? 
-    // A wrapper!
 }
-
+// What do you call an elf who sings? 
+    // A wrapper!
 int main() {
     char tree[] = "  *   *  *   ";  
     int size = sizeof(tree) / sizeof(tree[0]);
@@ -23,3 +22,4 @@ int main() {
     printf("Decorated Tree: %s\n", tree);
     return 0;
 }
+

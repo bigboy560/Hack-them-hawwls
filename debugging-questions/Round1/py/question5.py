@@ -5,9 +5,8 @@
 
 def decorate_cake(layers, decoration):
     for i in range(layers):
-        
-        print(f"Layer {i + 1} decorated with: {decoration[i]}")  
-
+        print(f"Layer {i + 1} decorated with: {decoration[i % len(decoration)]}")
 layers = 4  
 decoration = "*#@&"  
 decorate_cake(layers, decoration)
+

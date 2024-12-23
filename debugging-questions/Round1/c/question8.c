@@ -4,12 +4,10 @@
 // The ideal temperature for roasting a Christmas turkey is between 160°C and 180°C.
 
 #include <stdio.h>
-
 float fahrenheit_to_celsius(float fahrenheit) {
     
-    return (fahrenheit - 32) * 1.5; 
+    return (fahrenheit - 32) * 1.5;  
 }
-
 int main() {
     float fahrenheit = 350;  
     float celsius;
@@ -22,3 +20,4 @@ int main() {
     }
     return 0;
 }
+

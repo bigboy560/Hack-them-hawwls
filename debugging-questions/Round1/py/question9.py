@@ -7,8 +7,9 @@ def are_anagrams(str1, str2):
             return False  
     return True
 str1 = "Santa"
-str2 = "Satan"
+str2 = "satan"
 if are_anagrams(str1, str2):
     print(f"'{str1}' and '{str2}' are anagrams!")
 else:
     print(f"'{str1}' and '{str2}' are not anagrams.")
+

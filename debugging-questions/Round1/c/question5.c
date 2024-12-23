@@ -4,15 +4,12 @@
 // The number of layers and the decoration pattern are given, but the program has a logical error in how it prints the decoration for each layer.
 
 #include <stdio.h>
-
 void decorate_cake(int layers, char decoration[]) {
     int i;
     for (i = 0; i < layers; i++) {
-       
-        printf("Layer %d decorated with: %s\n", i + 1, decoration[i]);  
+        printf("Layer %d decorated with: %c\n", i + 1, decoration[i % 4]); 
     }
 }
-
 int main() {
     int layers = 4; 
     char decoration[] = "*#@&";  

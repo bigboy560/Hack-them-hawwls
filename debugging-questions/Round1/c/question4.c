@@ -5,19 +5,17 @@
 
 #include <stdio.h>
 #include <string.h>
-
 int count_rsvp(char invited[][50], char rsvp[][50], int total_invited, int total_rsvp) {
     int rsvp_count = 0;
     for (int i = 0; i < total_rsvp; i++) {
         for (int j = 0; j < total_invited; j++) {
             if (strcmp(rsvp[i], invited[j]) == 0) {
-                rsvp_count++;  
+                rsvp_count++; 
             }
         }
     }
     return rsvp_count;
 }
-
 int main() {
     char invited[][50] = {"Alice", "Bob", "Charlie", "Daisy", "Eve"};
     char rsvp[][50] = {"Charlie", "Bob", "Alice", "Eve", "Eve"};

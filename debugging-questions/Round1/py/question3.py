@@ -3,14 +3,13 @@
 # The program is supposed to ensure that no one gives a gift to themselves, but there’s a bug 
 # that causes some friends to exchange gifts with themselves.
 
-def gift_exchange(friends, gifts):
-    for i in range(len(friends)):
-        
-        if friends[i] != gifts[i]:
-            print(f"{friends[i]} gives a gift to {gifts[i]}")
-        else:
-            print(f"{friends[i]} cannot give a gift to themselves!")
+NUM_FRIENDS = 5
+def giftExchange(friends):
+    for i in range(NUM_FRIENDS):
+        print(f"Friend {i} gives a gift to Friend {friends[i]}.")
+def main():
+    friends = [0, 1, 2, 3, 4]  
+    giftExchange(friends)
+if __name__ == "__main__":
+    main()
 
-friends = ["Alice", "Bob", "Charlie", "Daisy"]
-gifts = ["Bob", "Charlie", "Alice", "Daisy"]
-gift_exchange(friends, gifts)

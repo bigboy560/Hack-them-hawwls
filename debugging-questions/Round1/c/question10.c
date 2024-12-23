@@ -7,7 +7,7 @@ long long factorial(int n) {
     
     
     for (int i = 1; i <= n; i++) {  
-        result *= i + 1;  
+        result *= i + 1; 
     }
     return result;
 }
